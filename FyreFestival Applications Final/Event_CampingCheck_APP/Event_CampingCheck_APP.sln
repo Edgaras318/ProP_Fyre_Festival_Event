@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29411.108
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Event_CampingCheck_APP", "Event_CampingCheck_APP\Event_CampingCheck_APP.csproj", "{FBFA4963-0B0E-44EE-91EB-FD15EC733291}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FBFA4963-0B0E-44EE-91EB-FD15EC733291}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBFA4963-0B0E-44EE-91EB-FD15EC733291}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBFA4963-0B0E-44EE-91EB-FD15EC733291}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBFA4963-0B0E-44EE-91EB-FD15EC733291}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D983F78F-3AD8-4EC3-A622-70F986D6BABA}
+	EndGlobalSection
+EndGlobal

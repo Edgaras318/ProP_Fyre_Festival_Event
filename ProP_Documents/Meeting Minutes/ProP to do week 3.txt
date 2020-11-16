@@ -1,0 +1,19 @@
+Prop/PoPD, Name: Fyre Music Festival
+
+Mentor: Andrius Kuprys, Client: Andre Postma
+Member: Abel, Rafael, Cristin, Edgaras
+
+Theme: Music festival.
+
+Client Needs:
+- Website:
+	- Change first page: It should attract the visitors (date, location, and information) --
+	- Sign up page: Signing up is required to buy tickets, create pop up when a user wants to buy ticket so that they can login/sign-up --
+	- Tickets: Create a meet and greet version tickets, Create unique ID number for identification (use some QR codes or RFID), Tickets are refundable, One-day tickets are not eligible to reserve a camping spot --
+	- Create a new sequence: Buying a camping site must be on a different page (Either click the location on the map or used drop box to select camping site), Reservations can be cancelled --
+	- Camping spot: Area size are not definite (one area can be bigger that the other), Only registered user can enter a certain spot (for control purposes)
+	- Check-in: must have an application that can be check-in easily--
+	- ATM/Banking: Program must be able to read a certain textfiles regarding transactions and sends it to the database (for both stands and users), Value cannot be negative, Top up wil be done in the website --
+	- User's account page: Create a page regarding information of the user's account (E-mail adress, Name, Password, DOB, ID)--
+- 	- Same design between apps and website--
+	- Borrowing stuff should have an own app and must deduct an amount of deposit and after they return it the amount will be refunded partially.--

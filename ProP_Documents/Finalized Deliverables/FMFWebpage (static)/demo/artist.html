@@ -1,0 +1,345 @@
+<html>
+  <head>
+    <title>Fyre Music Festival</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      header {
+        font-size: 40px;
+        background: rgb(0, 0, 0);
+        color: rgba(255, 255, 255, 0.9);
+        padding: 1rem;
+        text-align: center;
+        margin: -10;
+      }
+
+      h1 a {
+        color: inherit;
+      }
+
+      body {
+        font-family: Helvetica;
+        z-index: -50;
+        font-size: 21px;
+        background-image: url("img/background.jpg");
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-color: black;
+      }
+
+      ul {
+        z-index: 10;
+        list-style-type: none;
+        margin: -10;
+        padding: 0;
+        overflow: hidden;
+        background-color: rgb(0, 0, 0);
+        position: -webkit-sticky;
+        position: sticky;
+        top: -0.5;
+      }
+
+      li {
+        float: left;
+      }
+
+      li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 21px;
+        text-decoration: none;
+      }
+      .hlogo {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 4px 14px;
+        text-decoration: none;
+      }
+
+      li a:hover,
+      b:hover {
+        background-color: rgb(255, 0, 0);
+      }
+
+      .active {
+        background-color: rgb(100, 0, 0);
+      }
+
+      .login-container {
+        float: right;
+      }
+
+      .login-container input[type="text"] {
+        margin-top: 15px;
+        border: none;
+        width: 170px;
+      }
+
+      /*===========================================================================*/
+
+      .article-box {
+        background-color: rgb(72, 0, 255);
+        color: gray;
+        position: relative;
+        width: 400px;
+        height: 400px;
+        border: 1px solid black;
+        margin-top: 10px;
+        position: relative;
+      }
+
+      .img {
+        background-color: rgb(100, 0, 0);
+        width: 412px;
+        border: 3px solid rgb(40, 40, 40);
+        padding: 3px;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+      }
+
+      .grid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-gap: 30px;
+        margin-top: 50px;
+        margin-left: 30px;
+        margin-right: 30px;
+      }
+
+      .card {
+        color: white;
+        border-radius: 0.2rem;
+      }
+
+      .card h1 {
+        text-align: left;
+        font-size: 30px;
+        text-shadow: 2px 2px rgba(30, 30, 30, 0.7);
+      }
+
+      .card h2 {
+        text-align: left;
+        font-size: 15px;
+        text-shadow: 2px 2px rgba(30, 30, 30, 0.7);
+      }
+
+      .bg-img {
+        background-size: cover;
+        min-height: 100px;
+        background-position: center;
+        background-color: rgb(100, 0, 0);
+        border: 3px solid rgb(40, 40, 40);
+        padding: 3px;
+      }
+
+      .bg-img:hover {
+        background-color: rgb(255, 0, 0);
+        color: black;
+      }
+
+      .content {
+        padding: 15px;
+      }
+
+      .container {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 10px;
+        width: 1160px;
+        margin-right: 180px;
+        margin-left: 180px;
+        margin-top: 50px;
+        opacity: 0.8;
+      }
+
+      ul {
+        z-index: 10;
+        list-style-type: none;
+        margin: -10;
+        padding: 0;
+        overflow: hidden;
+        background-color: rgb(0, 0, 0);
+        position: -webkit-sticky;
+        position: sticky;
+        top: -0.5;
+      }
+
+      li {
+        float: left;
+      }
+
+      li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 21px;
+        text-decoration: none;
+      }
+
+      li b {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 3px 14px;
+        text-decoration: none;
+      }
+
+      li a:hover,
+      b:hover {
+        background-color: rgb(255, 0, 0);
+      }
+
+      .active {
+        background-color: rgb(100, 0, 0);
+      }
+
+      /*===========================================================================*/
+    </style>
+  </head>
+  <body>
+    <header>
+      <a href="index.html"
+        ><img href="index.html" src="img/FMFwhite.png" style="width:15%"/></a
+      ><br />
+      <h1>
+        <a href="index.html" style="text-decoration: none"
+          >FYRE MUSIC FESTIVAL
+        </a>
+      </h1>
+    </header>
+    <ul>
+      <li>
+        <a class="active hlogo" href="index.html"
+          ><img src="img/FMFwhite.png" alt="HOME" width="45"
+        /></a>
+      </li>
+      <li><a href="ticket.html">TICKETS</a></li>
+      <li><a href="artist.html">ARTISTS</a></li>
+      <li><a href="-">INFO</a></li>
+      <li style="float:right"><a href="#login" type="submit">REGISTER</a></li>
+      <div class="login-container">
+        <form action="/action_page.php">
+          <input type="text" placeholder="Username" name="username" />
+          <input type="text" placeholder="Password" name="psw" />
+          <li style="float:right"><a href="#login" type="submit">LOGIN</a></li>
+        </form>
+      </div>
+    </ul>
+
+    <div class="grid-container">
+      <div class="card">
+        <div class="bg-img">
+          <a href="alb10.html"
+            ><img src="img/art/eminem.jpg" style="width:100%"
+          /></a>
+        </div>
+        <div class="content">
+          <h1>EMINEM</h1>
+          <h2>2018</h2>
+        </div>
+      </div>
+      <div class="card">
+        <div class="bg-img">
+          <a href="alb9.html"
+            ><img src="img/art/dumont.jpg" style="width:100%"
+          /></a>
+        </div>
+        <div class="content">
+          <h1>DUKE DUMONT</h1>
+          <h2>2017</h2>
+        </div>
+      </div>
+      <div class="card">
+        <div class="bg-img">
+          <a href="alb8.html"
+            ><img src="img/art/geazy.jpg" style="width:100%"
+          /></a>
+        </div>
+        <div class="content">
+          <h1>G-EAZY</h1>
+          <h2>2013</h2>
+        </div>
+      </div>
+      <div class="card">
+        <div class="bg-img">
+          <a href="alb7.html"
+            ><img src="img/art/jcole.jpg" style="width:100%"
+          /></a>
+        </div>
+        <div class="content">
+          <h1>J-COLE</h1>
+          <h2>2010</h2>
+        </div>
+      </div>
+      <div class="card">
+        <div class="bg-img">
+          <a href="alb6.html"
+            ><img src="img/art/lamar.jpg" style="width:100%"
+          /></a>
+        </div>
+        <div class="content">
+          <h1>KENDRICK LAMAR</h1>
+          <h2>2009</h2>
+        </div>
+      </div>
+      <div class="card">
+        <div class="bg-img">
+          <a href="alb5.html"
+            ><img src="img/art/lazer.jpg" style="width:100%"
+          /></a>
+        </div>
+        <div class="content">
+          <h1>MAJOR LAZER</h1>
+          <h2>2004</h2>
+        </div>
+      </div>
+      <div class="card">
+        <div class="bg-img">
+          <a href="alb4.html"
+            ><img src="img/art/logic.jpg" style="width:100%"
+          /></a>
+        </div>
+        <div class="content">
+          <h1>LOGIC</h1>
+          <h2>2002</h2>
+        </div>
+      </div>
+      <div class="card">
+        <div class="bg-img">
+          <a href="alb3.html"
+            ><img src="img/art/rayel.jpg" style="width:100%"
+          /></a>
+        </div>
+        <div class="content">
+          <h1>ANDREW RAYEL</h1>
+          <h2>2000</h2>
+        </div>
+      </div>
+      <div class="card">
+        <div class="bg-img">
+          <a href="alb2.html"
+            ><img src="img/art/rocky.jpg" style="width:100%"
+          /></a>
+        </div>
+        <div class="content">
+          <h1>A$AP ROCKY</h1>
+          <h2>1999</h2>
+        </div>
+      </div>
+      <div class="card">
+        <div class="bg-img">
+          <a href="alb1.html"
+            ><img src="img/art/tovelo.jpg" style="width:100%"
+          /></a>
+        </div>
+        <div class="content">
+          <h1>TOVE-LO</h1>
+          <h2>1996</h2>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

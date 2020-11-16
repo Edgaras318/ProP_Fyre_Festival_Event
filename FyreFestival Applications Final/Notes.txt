@@ -1,0 +1,5 @@
+Log files are saved in debug folder
+
+FyreFestival Applications Final\"APPLICATION NAME"\"APPLICATION NAME"\bin\Debug
+
+For non known reason overview application started lagging once started using database on hosting 

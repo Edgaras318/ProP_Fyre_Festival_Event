@@ -1,0 +1,446 @@
+
+<html>
+<head>
+    <title>Stanitation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  
+header {
+  font-size: 40px;
+  background: rgb(0, 0, 0);
+  color: rgba(255, 255, 255, 0.9);
+  padding: 1rem;
+  text-align: center;
+  margin: -10;
+}
+
+h1 a{ color: inherit;}
+
+body {
+  font-family: Helvetica;
+  z-index: -50;
+  font-size: 21px;
+  background-image: url("img/background.jpg");
+  background-position:  center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-color: black;
+}
+
+ul {
+  z-index: 10;
+  list-style-type: none;
+  margin: -10;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(0, 0, 0);
+  position: -webkit-sticky;
+  position: sticky;
+  top: -0.5;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 21px;
+  text-decoration: none;
+}
+.hlogo {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 4px 14px;
+  text-decoration: none;
+}
+
+li a:hover, b:hover {
+  background-color: rgb(255, 0, 0);
+}
+
+.active {
+  background-color: rgb(100, 0, 0);
+}
+
+.login-container {
+  float: right;
+}
+
+.login-container input[type=text] {
+  margin-top: 15px;
+  border: none;
+  width: 170px;
+}
+
+/*===========================================================================*/
+
+.accordion {
+  width: 100%;
+  max-width: 1400px;
+  height: 350px;
+  overflow: hidden;
+  margin: 20px auto;
+}
+
+.accordion ul {
+  z-index: 1;
+  width: 100%;
+  display: table;
+  table-layout: fixed;
+  margin: 0;
+  padding: 0;
+}
+
+.accordion ul li {
+  display: table-cell;
+  vertical-align: bottom;
+  position: relative;
+  width: 10%;
+  height: 350px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  transition: all 500ms ease;
+}
+
+.accordion ul li div {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+}
+
+.accordion ul li div a {
+  display: block;
+  height: 350px;
+  width: 100%;
+  position: relative;
+  z-index: 3;
+  padding: 15px 20px;
+  box-sizing: border-box;
+  color: #fff;
+  text-decoration: none;
+  font-family: Open Sans, sans-serif;
+  transition: all 200ms ease;
+}
+
+.accordion ul li div a * {
+  opacity: 0;
+  margin: 0;
+  width: 100%;
+  text-overflow: ellipsis;
+  position: relative;
+  z-index: 5;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-transform: translateX(-20px);
+  transform: translateX(-20px);
+  -webkit-transition: all 400ms ease;
+  transition: all 400ms ease;
+}
+
+.accordion ul li div a h2 {
+  font-family: Helvetica;
+  text-overflow: clip;
+  font-size: 21px;
+  text-transform: uppercase;
+  margin-bottom: 2px;
+  top: 290px;
+}
+
+.accordion ul li:nth-child(1) { background-image: url("img/art/eminem.jpg"); }
+
+.accordion ul li:nth-child(2) { background-image: url("img/art/rocky.jpg"); }
+
+.accordion ul li:nth-child(3) { background-image: url("img/art/geazy.jpg"); }
+
+.accordion ul li:nth-child(4) { background-image: url("img/art/jcole.jpg"); }
+
+.accordion ul li:nth-child(5) { background-image: url("img/art/lamar.jpg"); }
+
+.accordion ul li:nth-child(6) { background-image: url("img/art/logic.jpg"); }
+
+.accordion ul li:nth-child(7) { background-image: url("img/art/rayel.jpg"); }
+
+.accordion ul li:nth-child(8) { background-image: url("img/art/dumont.jpg"); }
+
+.accordion ul li:nth-child(9) { background-image: url("img/art/lazer.jpg"); }
+
+.accordion ul li:nth-child(10) { background-image: url("img/art/tovelo.jpg"); }
+
+.accordion ul:hover li { width: 8%; }
+
+.accordion ul:hover li:hover { width: 27%; }
+
+.accordion ul:hover li:hover a { background: rgba(0, 0, 0, 0); }
+
+.accordion ul:hover li:hover a * {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+
+/*===========================================================================*/
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 30px;
+  margin-top: 50px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.card {
+  color: white;
+  border: 1px solid rgba(51, 51, 51, 0.8);
+  border-radius: .25rem;
+  background-color: rgba(0, 0, 0, 0.808);
+}
+
+.bg-img {
+  background-size: cover;
+  min-height: 100px;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.808);
+}
+
+.content {
+  padding: 15px;
+}
+
+.content h4 {
+  margin-top: -5px;
+  text-transform: uppercase;
+}
+
+.content p{
+  color: rgb(100, 100, 100);
+}
+
+button {
+  position: relative;
+  
+  color: white;
+  text-transform: uppercase;
+  background-color: rgba(121, 0, 0, 0.8) ;
+  border: 1px solid  rgba(70, 0, 0, 0.8) ;
+  padding: .5rem 1rem;
+  cursor: pointer;
+  border-radius: .25rem;
+}
+
+button:hover{
+  background-color: rgba(255, 0, 0, 0.8);
+  border-color:  rgba(255, 0, 0, 0.8);
+}
+
+/*===========================================================================*/
+
+.container {
+  
+  
+  background-color:  rgba(51, 51, 51, 0);
+  width: 100%;
+  margin-top: 50px;
+  padding-bottom: 50px;
+} 
+
+.container p{
+  text-shadow: 3px 2px rgba(30, 30, 30, 0.7);
+  font-size: 70px;
+  letter-spacing: 3px;
+  word-spacing: 10px;
+  padding-top: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+}
+
+.events-box-1{
+  background-color:rgba(51, 51, 51, 0);
+  position: relative;
+  margin-top:10px;
+  font-size: 21px;
+}
+
+.events-box-1 img{
+  width: 100% !important; /*override the width below*/
+  left: 0px;
+  right: 0px;
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+  background-size: 100%;
+}
+
+.events-box-1 h4{
+  position: absolute;
+  text-shadow: 2px 2px rgba(30, 30, 30, 0.5);
+  left:130px;
+  top:70px;
+  color: rgba(200, 200, 200, 0.5);  
+  font-size: 51px;
+}
+.events-box-1 h5{
+  position: absolute;
+  left:200px;
+  top:300px;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0.1); /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 4px;
+  -webkit-text-stroke-color: rgba(150, 0, 0, 0.8);
+  font-size: 70px;
+}
+
+.events-box-1 h3{
+  position: absolute;
+  left:1210px;
+  top:600px;
+  color: rgba(150, 150, 150, 0.3);
+  text-shadow: 3px 3px rgba(255, 255, 255, 0.5);
+  font-size: 70px;
+}
+
+.buy_tickets{
+  position: absolute;
+  left:940px;
+}
+
+
+/*===========================================================================*/
+
+
+.vof{
+  text-shadow: 3px 2px rgba(30, 30, 30, 0.7);
+  font-size: 70px;
+  letter-spacing: 3px;
+  word-spacing: 10px;
+  padding-top: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+}
+
+.ytvideo{
+  position: relative;
+  width: 100%;
+  padding-bottom: 58.25%; 
+  height: 0;
+  margin-bottom: 1rem;
+  overflow: hidden;
+
+}
+.ytvideo iframe{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/*===========================================================================*/
+
+</style>
+</head>
+<body>
+
+<header>
+  <a href = "index.html"><img href="index.html" src="img/FMFwhite.png" style="width:15%"></a><br>
+  <h1><a href="index.html"style="text-decoration: none">FYRE MUSIC FESTIVAL </a></h1>
+</header>
+<ul>
+  <li><a class="active hlogo" href="index.html"><img  src="img/FMFwhite.png" alt="HOME" width="45"></a></li>
+  <li><a href="ticket.html">TICKETS</a></li>
+  <li><a href="artist.html">ARTISTS</a></li>
+  <li><a href="-">INFO</a></li>
+  <li style="float:right"><a href="#login" type="submit">REGISTER</a></li>
+  <div class="login-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Username" name="username">
+      <input type="text" placeholder="Password" name="psw">
+      <li style="float:right"><a href="#login" type="submit">LOGIN</a></li>
+    </form>
+  </div>
+</ul>
+
+<div class="accordion">
+  <ul>
+    <li>
+      <div> <a href="alb1.html">
+        <h2>EMINEM</h2>
+        </a> </div>
+    </li>
+    <li>
+      <div> <a href="alb2.html">
+        <h2>A$AP ROCKY</h2>
+        </a> </div>
+    </li>
+    <li>
+      <div> <a href="alb3.html">
+        <h2>G-EAZY</h2>
+        </a> </div>
+    </li>
+    <li>
+      <div> <a href="alb4.html">
+        <h2>J COLE</h2>
+        </a> </div>
+    </li>
+    <li>
+      <div> <a href="alb5.html">
+        <h2>KENDRICK LAMMAR</h2>
+        </a> </div>
+    </li>
+    <li>
+      <div> <a href="alb6.html">
+        <h2>LOGIC</h2>
+        </a> </div>
+    </li>
+    <li>
+      <div> <a href="alb7.html">
+        <h2>ANDREW RAYEL</h2>
+        </a> </div>
+    </li>
+    <li>
+      <div> <a href="alb8.html">
+        <h2>DUKE DUMONT</h2>
+        </a> </div>
+    </li>
+    <li>
+      <div> <a href="alb9.html">
+        <h2>MAJOR LAZER</h2>
+        </a> </div>
+    </li>
+    <li>
+      <div> <a href="alb10.html">
+        <h2>TOVE LO</h2>
+        </a> </div>
+    </li>
+  </ul>
+</div>
+
+<div class ="container">
+  <div style="text-align: center">
+    <p>THE ISLAND</p>
+    <div class= "events-box-1">
+      <h4>Once home to Blackbeard and Pablo Escobar...</h4>
+      <h5>The greatest minds in music.</h5>
+      <h3>join us...</h3>
+      <img src="img/intro.png" width="100%" >
+    </div>
+  </div>
+</div>
+
+
+<div class="vof">
+  <br><p>TAKE A LOOK</p>
+</div>
+<div class="ytvideo">
+  <iframe width="100%"  src="https://www.youtube.com/embed/kkovBKfcSJ8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowautoplay></iframe>
+</div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+use outlook for meeting
+
+setup document
+
+project plan:
+-write version number
+-what are the changes in tables 
+-project justification (benefit of the project for the clients)
+-more detailed requirement list for every app(moscow list)
+
+communication:
+-3 times meeting
+
+app:
+-should the app identify the employee/who's working
+-1 application for all things/different app for every purpose
+-login authentification
+-checks if the visitor return the loaned stuff at check out
+-trace how many items in stocks and how many are sold
+-borrowing item should be 20/50 percent off at its price
+
+Atm
+-
+
+database
+-user can be 2 type(employee/visitor) and also specify the employee type
+
+client:
+-how to pay for a ticket
+-how would the products be identified, by picture or by barcode
+
+
+next week
+moscow list
+all requirement
+setup document
+ERD
+
+client meeting
+prioritize what to do
+
+
+
+
+
+
+

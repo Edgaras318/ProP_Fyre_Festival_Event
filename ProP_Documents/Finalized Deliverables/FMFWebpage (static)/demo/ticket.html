@@ -1,0 +1,221 @@
+
+<html>
+<head>
+    <title>Fyre Music Festival</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  
+header {
+  font-size: 40px;
+  background: rgb(0, 0, 0);
+  color: rgba(255, 255, 255, 0.7);
+  padding: 1rem;
+  text-align: center;
+  margin: -10;
+}
+
+h1 a{ color: inherit;}
+
+body {
+  font-family: Helvetica;
+  z-index: -50;
+  font-size: 21px;
+  background-image: url("img/background.jpg");
+  background-position:  center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-color: black;
+}
+
+ul {
+  z-index: 10;
+  list-style-type: none;
+  margin: -10;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(0, 0, 0);
+  position: -webkit-sticky;
+  position: sticky;
+  top: -0.5;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 21px;
+  text-decoration: none;
+}
+.hlogo {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 4px 14px;
+  text-decoration: none;
+}
+
+li a:hover, b:hover {
+  background-color: rgb(255, 0, 0);
+}
+
+.active {
+  background-color: rgb(100, 0, 0);
+}
+
+.login-container {
+  float: right;
+}
+
+.login-container input[type=text] {
+  margin-top: 15px;
+  border: none;
+  width: 170px;
+}
+
+/*===========================================================================*/
+
+.container {
+  z-index: 1;
+  border-radius: 5px;
+  background-color:  rgba(51, 51, 51, 0);
+  padding: 10px;
+  width: 1160px;
+  margin-right:150px;
+  margin-left:180px;
+  margin-top: 50px;
+  padding-bottom: 50px;
+  opacity: 0.8;
+} 
+
+.container p{
+  text-shadow: 3px 2px rgba(30, 30, 30, 0.7);
+  font-size: 70px;
+  letter-spacing: 3px;
+  word-spacing: 10px;
+  padding-top: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+}
+
+.events-box-1{
+  background-color:rgba(51, 51, 51, 0.8);
+  position: relative;
+  width: 1140px;
+  height:100px;
+  
+  margin-top:10px;
+  font-size: 21px;
+}
+.events-box-1 h2{
+  position: absolute;
+  left:40px;
+  color:rgba(210, 210, 210, 0.9);
+}
+.events-box-1 h3{
+  position: absolute;
+  left:45px;
+  top:40px;
+  color: rgba(255, 217, 0, 0.301);
+  font-size: 18px;
+}
+.events-box-1 h4{
+  position: absolute;
+  left:200px;
+  color: rgba(250, 250, 250, 0.9);  
+  font-size: 21px;
+}
+.events-box-1 h5{
+  position: absolute;
+  left:550px;
+  top:-10px;
+  color: rgba(255, 217, 0, 0.8);
+  font-size: 28px;
+}
+.buy_tickets{
+  position: absolute;
+  left:940px;
+}
+
+
+/*===========================================================================*/
+
+</style>
+</head>
+<body>
+  <header>
+    <a href="index.html"
+      ><img href="index.html" src="img/FMFwhite.png" style="width:15%"/></a
+    ><br />
+    <h1>
+      <a href="index.html" style="text-decoration: none"
+        >FYRE MUSIC FESTIVAL
+      </a>
+    </h1>
+  </header>
+  <ul>
+    <li>
+      <a class="active hlogo" href="index.html"
+        ><img src="img/FMFwhite.png" alt="HOME" width="45"
+      /></a>
+    </li>
+    <li><a href="ticket.html">TICKETS</a></li>
+    <li><a href="artist.html">ARTISTS</a></li>
+    <li><a href="-">INFO</a></li>
+    <li style="float:right"><a href="#login" type="submit">REGISTER</a></li>
+    <div class="login-container">
+      <form action="/action_page.php">
+        <input type="text" placeholder="Username" name="username" />
+        <input type="text" placeholder="Password" name="psw" />
+        <li style="float:right"><a href="#login" type="submit">LOGIN</a></li>
+      </form>
+    </div>
+  </ul>
+
+<div class ="container">
+  <div style="text-align: center">
+<p>TICKETS</p>
+<div class= "events-box-1">
+  <h2>MAY 15</h2>
+  <h3>FRI </h3>
+  <h4>SOme Info later</h4>
+  <h5>SINGLE DAY 1</h5>
+  <a class="buy_tickets" href="events1.html"><img src="img/buy_tickets.png" height="98"> </a>
+</div>
+    <div class= "events-box-1">
+      <h2>MAY 16</h2>
+      <h3>SAT </h3>
+      <h4>SOme Info later</h4>
+      <h5>SINGLE DAY 2</h5>
+      <a class="buy_tickets" href="events1.html"><img src="img/buy_tickets.png" height="98"> </a>
+    </div>
+    <div class= "events-box-1">
+        <h2>MAY 17</h2>
+        <h3>SUN</h3>
+        <h4>SOme Info later</h4>
+        <h5>SINGLE DAY 3</h5>
+        <a class="buy_tickets" href="events1.html"><img src="img/buy_tickets.png" height="98"> </a>
+      </div>
+          <div class= "events-box-1">
+            <h2>MAY 15-17</h2>
+            <h3>FRI-SUN</h3>
+            <h4>SOme Info later</h4>
+            <h5>BASIC</h5>
+            <a class="buy_tickets" href="events1.html"><img src="img/buy_tickets.png" height="98"> </a>
+          </div> <div class= "events-box-1">
+              <h2>MAY 15-17</h2>
+              <h3>FRI-SUN</h3>
+              <h4>SOme Info later</h4>
+              <h5>FAN</h5>
+              <a class="buy_tickets" href="events1.html"><img src="img/buy_tickets.png" height="98"> </a>
+            </div>
+</div>
+
+
+
+</body>
+</html>
